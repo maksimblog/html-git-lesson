@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .form-row {
+            margin: 10px;
+
+        }
+
+        .form-row label {
+            font-weight: bold;
+            color:white;
+        }
+
+        .center {
+            margin: 0 auto;
+            
+        }
+        .container {
+            background: red;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="center container">
+
+        <div class="form-row">
+            <label for="username">Имя:</label>
+            <input type="text" id="username" autocomplete="off" placeholder="Ваше имя" name="username">
+        </div>
+
+        <div class="form-row">
+            <label for="Adres">Адрес:</label>
+            <input type="text" id="Adres" autocomplete="off" placeholder="Адрес доставки" name="Adres">
+        </div>
+
+        <div class="form-row">
+            <label for="Telefon">Телефон:</label>
+            <input type="text" id="Telefon" autocomplete="off" placeholder="Телефон" name="telefon">
+        </div>
+
+        <div class="form-row">
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" autocomplete="off" placeholder="Email" name="email">
+        </div>
+
+
+        <div class="form-row">
+            <label for="count">Количество палочек</label>
+            <input type="number" id="count" autocomplete="off" min="1" max='max' name="count">
+        </div>
+
+
+        <div class="form-row">
+            <label for="Вид палочек">Вид палочек</label>
+            <select id="Вид палочек" name="type-pк">
+                <option value="no">Не выбрано</option>
+                <option value="Обычные" selected> Обычные</option>
+                <option value="Учебные">Учебные</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="Menu">Меню</label>
+            <select id="Menu" name="Меню">
+                <option value="selected">Не выбрано</option>
+                <option value="Филадельфия">Филадельфия</option>
+                <option value="Калифорния">Калифорния</option>
+                <option value="Дракон">Дракон</option>
+                <option value="Каппа-маки">Каппа-маки</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="Нужны ли салфетки">Нужны ли салфетки</label>
+            <select id="Нужны ли салфекти" name="Нужны ли салфетки">
+                <option value="selected">Не выбрано</option>
+                <option value="Да">Да</option>
+                <option value="Нет">Нет</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <textarea id="message" placeholder="Комментарий" name="Комментарий"></textarea>
+        </div>
+    </form>
+
+</body>
+
+</html>
